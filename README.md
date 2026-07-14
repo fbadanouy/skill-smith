@@ -33,15 +33,15 @@ If your agent wins bare-handed, the SMITH refuses your gold.
 ## THE SEVEN HAMMERS
 
 ```
-  ⚒️  /forge      new skill. baseline first, or no deal
-  🔥  /smelt      melt raw docs down to skills
-  ⚡  /sharpen    dull edge activates late. fix it
-  🔧  /repair     blade bit its wielder. find the cursed line
-  🗡️  /temper     prove it: loads, activates, beats bare hands
-  ⚖️  /appraise   whole pack on the anvil. judged
-  🛡️  /armory     character sheet. equipped. weight.
+  ⚒️  /skill-forge      new skill. baseline first, or no deal
+  🔥  /skill-smelt      melt raw docs down to skills
+  ⚡  /skill-sharpen    dull edge activates late. fix it
+  🔧  /skill-repair     blade bit its wielder. find the cursed line
+  🗡️  /skill-temper     prove it: loads, activates, beats bare hands
+  ⚖️  /skill-appraise   whole pack on the anvil. judged
+  🛡️  /skill-armory     character sheet. equipped. weight.
 
-  🧙  /skill-smith   just speak. the SMITH picks the hammer
+  🧙  /skill-smith      just speak. the SMITH picks the hammer
 ```
 
 ## THE OATH

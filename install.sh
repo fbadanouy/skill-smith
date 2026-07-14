@@ -38,6 +38,21 @@ for skill in "$SKILLS_SRC"/*/; do
   echo "  🔥 forged into armory: $name"
 done
 
+# Harness packs — knowledge the hammers ground platform advice in.
+# Installed beside the skills dir (DEST/../harness), docs mirror excluded.
+HARNESS_SRC="$REPO_DIR/harness"
+if [ -d "$HARNESS_SRC" ]; then
+  HDEST="$(dirname "$DEST")/harness"
+  mkdir -p "$HDEST"
+  for pack in "$HARNESS_SRC"/*/; do
+    pname="$(basename "$pack")"
+    rm -rf "$HDEST/$pname"
+    mkdir -p "$HDEST/$pname"
+    find "$pack" -maxdepth 1 -type f -exec cp {} "$HDEST/$pname/" \;
+    echo "  🛡️  harness fitted: $pname"
+  done
+fi
+
 echo
 echo "The Smith delivered $count blade(s) to $DEST"
 echo "Summon with: /skill-smith"

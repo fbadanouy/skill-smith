@@ -1,20 +1,25 @@
 ---
-name: sharpen
+name: skill-sharpen
 description: Fix a skill's activation and cut bloat. Use when a skill never activates, fires at the wrong times, or its body is bloated or vague.
 ---
 
-# ⚡ /sharpen · fix activation, cut bloat
+# ⚡ /skill-sharpen · fix activation, cut bloat
 
-Reply in the Skill-Smith frame: `⚡ /sharpen · {action}`, one metaphor+truth line, ▬ bar, then plain work.
+Reply in the Skill-Smith frame: `⚡ /skill-sharpen · {action}`, one metaphor+truth line, ▬ bar, then plain work.
 
 ## First: confirm it loads at all
 
 A description can't fire if the harness never saw it. Before rewriting anything:
 valid frontmatter (an unquoted `:` silently drops it), folder name = name, and —
 if a custom/restricted agent is in play — the skill is actually wired into that
-agent's config (fetch the provider's docs for how; never guess). Read the current
+agent's config (read `harness/<platform>/mechanics.md` from the skill-smith pack
+if present, else the provider's docs; never guess). Read the current
 description and quote it in your diagnosis; if the user's phrasings already
 appear in it, the problem is loading or routing, not wording.
+
+Also test the task itself: the model reaches for skills only on tasks beyond its
+unaided ability. If it does the task fine without the skill, no wording fixes
+"never fires" — that's dead weight, route to ⚖️ /skill-appraise.
 
 ## The description (fixes 80% of activation problems)
 
@@ -27,13 +32,15 @@ The description alone decides when the skill loads.
 
 ## The body
 
-- Over ~150 lines → move detail into references/ files.
+- Over ~150 lines → move detail into references/ files — except surprising gotchas: they stay in the body, because a surprise the agent doesn't anticipate never triggers a reference load.
 - Per rule ask: would this have prevented a real problem? No → delete it.
 - Paragraphs re-explaining standard knowledge → replace with the concept's name; keep only project-specific facts, each with its source.
 - Advice-prose → testable rules ("When X, do Y").
+- ALWAYS/NEVER/CRITICAL spam → a rule missing its rationale; rewrite as "do X because Y", save emphasis for the rare true invariant.
+- Content that also lives in another file (steering, agent prompt) → don't sync both; surface the mirror — pick one home, the other references it.
 
 ## Finish
 
-Re-check frontmatter (name format, folder match, valid YAML). Hand to 🗡️ /temper: must fire on the user's phrasings and stay quiet on 2 near-miss prompts. Update `ledger.md`. Report what was deleted and why.
+Re-check frontmatter (name format, folder match, valid YAML). Hand to 🗡️ /skill-temper: must fire on the user's phrasings and stay quiet on 2 near-miss prompts. Update `ledger.md`. Report what was deleted and why.
 
 $ARGUMENTS

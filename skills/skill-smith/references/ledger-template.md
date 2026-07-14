@@ -1,6 +1,6 @@
 # Ledger
 
-Maintained by the Skill-Smith commands. Update after every /forge, /sharpen, /repair, /temper, /appraise.
+Maintained by the Skill-Smith commands. Update after every /skill-forge, /skill-sharpen, /skill-repair, /skill-temper, /skill-appraise.
 
 Last updated: <date>
 
@@ -9,7 +9,7 @@ Last updated: <date>
 | Skill | Created | Purpose | Trigger phrases | Last used | Condition | Last action |
 |---|---|---|---|---|---|---|
 
-Condition: **good** (tested, passing) · **weak** (needs /sharpen) · **broken** (known misbehavior, needs /repair) · **stale** (dead references) · **untested**.
+Condition: **good** (tested, passing) · **weak** (needs /skill-sharpen) · **broken** (known misbehavior, needs /skill-repair) · **stale** (dead references) · **untested**.
 
 ## Failure log (from repairs and failed tests)
 

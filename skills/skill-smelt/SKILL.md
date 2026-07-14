@@ -1,11 +1,11 @@
 ---
-name: smelt
+name: skill-smelt
 description: Extract skills and rules from raw material. Use when the user provides docs, transcripts, runbooks, or review feedback and wants skills or reusable rules pulled out of it.
 ---
 
-# 🔥 /smelt · extract from raw material
+# 🔥 /skill-smelt · extract from raw material
 
-Reply in the Skill-Smith frame: `🔥 /smelt · {action}`, one metaphor+truth line, ▬ bar, then plain work.
+Reply in the Skill-Smith frame: `🔥 /skill-smelt · {action}`, one metaphor+truth line, ▬ bar, then plain work.
 
 You can detect ambiguity, contradiction, and absence in the material — you cannot know the reasons behind choices. Turn gaps into questions for the user; never invent answers.
 
