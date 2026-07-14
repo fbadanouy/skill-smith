@@ -16,7 +16,7 @@ Confirm scope (workspace, global, or both), read every SKILL.md, then check each
 - **unused** — no sign of use (ledger's last-used column, or ask the user); unused ≠ useless, confirm before recommending deletion
 - **bloated** — body over ~150 lines with no references/ split; rules re-explaining standard knowledge; rules tied to no real problem → ⚡
 - **dead weight** — the model handles the task just as well without it (a /skill-temper baseline run passed skill-less, or the body only restates what any model knows) → deletion candidate; the user decides
-- **wrong artifact type** — really always-on knowledge (steering), an event automation (hook), or permission scoping (agent config); skills can't do those jobs → route via /skill-smith; ground harness-config advice in `harness/<platform>/primitives.md` if the pack is installed, else doc citations
+- **wrong artifact type** — really always-on knowledge (steering), an event automation (hook), or permission scoping (agent config); skills can't do those jobs → 🪖 /skill-smith-fit, grounded in `harness/<platform>/primitives.md` if the pack is installed, else doc citations
 
 ## Report
 

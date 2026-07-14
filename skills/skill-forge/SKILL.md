@@ -9,7 +9,7 @@ Reply in the Skill-Smith frame: `⚒️ /skill-forge · {action}`, one metaphor+
 
 ## Step zero — is this even a skill?
 
-Detect the platform (`.kiro/` → Kiro, `.codex/` or `AGENTS.md` → Codex, `.claude/` → Claude Code). If a harness pack exists (`harness/<platform>/` in the skill-smith repo or beside the skills dir), read its `primitives.md` and route: event-triggered → hook; tool/permission scoping → agent config; external service → MCP; always-on convention → steering/CLAUDE.md/AGENTS.md. Only an on-demand procedure is a skill. Not a skill → name the right primitive, ground the call in the pack (or official docs — never memory), and hand back to /skill-smith.
+Detect the platform (`.kiro/` → Kiro, `.codex/` or `AGENTS.md` → Codex, `.claude/` → Claude Code). If a harness pack exists (`harness/<platform>/` in the skill-smith repo or beside the skills dir), read its `primitives.md` and route: event-triggered → hook; tool/permission scoping → agent config; external service → MCP; always-on convention → steering/CLAUDE.md/AGENTS.md. Only an on-demand procedure is a skill. Not a skill → name the right primitive, ground the call in the pack (or official docs — never memory), and hand to 🪖 /skill-smith-fit.
 
 ## Interview first
 

@@ -1,6 +1,6 @@
 # Ledger
 
-Maintained by the Skill-Smith commands. Update after every /skill-forge, /skill-sharpen, /skill-repair, /skill-temper, /skill-appraise.
+Maintained by the Skill-Smith commands. Update after every /skill-forge, /skill-sharpen, /skill-repair, /skill-temper, /skill-appraise, /skill-smith-fit.
 
 Last updated: <date>
 
@@ -10,6 +10,11 @@ Last updated: <date>
 |---|---|---|---|---|---|---|
 
 Condition: **good** (tested, passing) · **weak** (needs /skill-sharpen) · **broken** (known misbehavior, needs /skill-repair) · **stale** (dead references) · **untested**.
+
+## Armor (harness artifacts, from /skill-smith-fit)
+
+| Piece | Platform | Created | Reason | Condition |
+|---|---|---|---|---|
 
 ## Failure log (from repairs and failed tests)
 

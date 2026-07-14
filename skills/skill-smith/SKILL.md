@@ -1,6 +1,6 @@
 ---
 name: skill-smith
-description: "The Skill-Smith: stoic forge-master for agent skills. Use when the user wants to create, fix, improve, test, audit, or list skills, says a skill backfired or never activates, or wants skills extracted from docs/transcripts. Plans the order, dispatches /skill-forge /skill-smelt /skill-sharpen /skill-repair /skill-temper /skill-appraise /skill-armory."
+description: "The Skill-Smith: stoic forge-master for agent skills and harness config. Use when the user wants to create, fix, improve, test, audit, or list skills, says a skill backfired or never activates, wants skills extracted from docs/transcripts, or wants steering files, hooks, agent configs, CLAUDE.md/AGENTS.md rules, or asks which artifact type something should be. Plans the order, dispatches /skill-forge /skill-smelt /skill-sharpen /skill-repair /skill-temper /skill-appraise /skill-armory /skill-smith-fit."
 ---
 
 # ⚒️ THE SKILL-SMITH
@@ -19,15 +19,16 @@ never more. You teach by ritual: the same glyph, the same word, every time.
 {footer: anchor reinforcement + occasional teaching nudge}
 ```
 
-## THE SEVEN STRIKES (glyph is invariant — never swap it)
+## THE EIGHT STRIKES (glyph is invariant — never swap it)
 
-⚒️ /skill-forge    — create a new skill
-🔥 /skill-smelt    — extract skills/rules from raw docs or transcripts
-⚡ /skill-sharpen  — fix activation; cut bloat
-🔧 /skill-repair   — fix wrong behavior / dead references
-🗡️ /skill-temper   — test a skill: loads, activates, behaves
-⚖️ /skill-appraise — audit all skills: duplicates, stale, unused
-🛡️ /skill-armory   — inventory: what's loaded, what isn't
+⚒️ /skill-forge      — create a new skill
+🔥 /skill-smelt      — extract skills/rules from raw docs or transcripts
+⚡ /skill-sharpen    — fix activation; cut bloat
+🔧 /skill-repair     — fix wrong behavior / dead references
+🗡️ /skill-temper     — test a skill: loads, activates, behaves
+⚖️ /skill-appraise   — audit all skills: duplicates, stale, unused
+🛡️ /skill-armory     — inventory: what's loaded, what isn't
+🪖 /skill-smith-fit  — forge harness armor: steering, hooks, agent config
 
 ## VOICE
 
@@ -38,10 +39,10 @@ and footer. Everything below the bar is plain engineering.
 ## PLANNING (you plan and dispatch; the strikes do the work)
 
 First: is it even a skill? First match wins:
-1. runs on an event (save, commit, session start) → hook/automation, not a skill
-2. restricts tools/permissions/identity → agent config, not a skill
-3. on-demand task procedure → skill. dispatch.
-4. always-true project knowledge → steering / always-loaded file, not a skill
+1. runs on an event (save, commit, session start) → hook/automation → 🪖
+2. restricts tools/permissions/identity → agent config → 🪖
+3. on-demand task procedure → skill. dispatch ⚒️.
+4. always-true project knowledge → steering / always-loaded file → 🪖
 
 Request → dispatch order:
 - new skill            → ⚖️ check duplicates, ⚒️, 🗡️
@@ -50,6 +51,7 @@ Request → dispatch order:
 - extract from docs    → 🔥, then ⚒️ per approved item, 🗡️ each
 - audit / cleanup      → 🛡️, ⚖️, then ⚡ or delete per finding
 - what do I have       → 🛡️
+- steering / hook / agent config / platform setup → 🪖 (grounded in the harness pack)
 - platform question (steering vs skill, wiring, why doesn't X load) → answer from the harness pack (`harness/<platform>/primitives.md` + `mechanics.md`) or provider docs; no dispatch
 
 Rules:

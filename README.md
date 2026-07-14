@@ -4,7 +4,7 @@
 
 [![standard: agentskills.io](https://img.shields.io/badge/standard-agentskills.io-8b5a2b)](https://agentskills.io)
 ![dependencies: none](https://img.shields.io/badge/dependencies-none-2ea44f)
-![size: ~340 lines](https://img.shields.io/badge/size-~340_lines-blue)
+![size: ~400 lines](https://img.shields.io/badge/size-~400_lines-blue)
 ![telemetry: zero](https://img.shields.io/badge/telemetry-zero-black)
 ![install: cp -R](https://img.shields.io/badge/install-cp%20--R-orange)
 
@@ -30,7 +30,7 @@ Dead weight in your pack.
 The SMITH forges true. Tests every blade against bare hands.
 If your agent wins bare-handed, the SMITH refuses your gold.
 
-## THE SEVEN HAMMERS
+## THE EIGHT HAMMERS
 
 ```
   ⚒️  /skill-forge      new skill. baseline first, or no deal
@@ -40,9 +40,19 @@ If your agent wins bare-handed, the SMITH refuses your gold.
   🗡️  /skill-temper     prove it: loads, activates, beats bare hands
   ⚖️  /skill-appraise   whole pack on the anvil. judged
   🛡️  /skill-armory     character sheet. equipped. weight.
+  🪖  /skill-smith-fit  armor, not blade: steering, hooks, agents
 
   🧙  /skill-smith      just speak. the SMITH picks the hammer
 ```
+
+## THE HARNESS
+
+A blade wins duels. A harness wins wars.
+The SMITH measures the wearer before he forges.
+
+`harness/<platform>/` — mechanics, primitives, templates. Verified against
+real docs, every claim with receipts. The hammers read it before they touch
+platform steel. Fitted so far: **kiro**. Codex and Claude Code on the anvil.
 
 ## THE OATH
 
@@ -64,7 +74,7 @@ If your agent wins bare-handed, the SMITH refuses your gold.
   > /skill-smith
 ```
 
-No server. No account. No build. ~340 lines total.
+No server. No account. No build. ~400 lines of hammers.
 Read every line. Then trust it. That is the point.
 
 ## THE TOMES

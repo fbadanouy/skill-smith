@@ -15,8 +15,8 @@ You can detect ambiguity, contradiction, and absence in the material — you can
 2. Flag ambiguities, contradictions between sources, suspicious absences.
 3. Ask the user only what can't be inferred: the reason behind a choice, which of two observed patterns is intended, whether an absence is deliberate.
 4. Draft each finding as: rule + source reference + label (`descriptive` = how it works today / `aspirational` = how they want it) + target artifact. No source, no rule. Mislabeling makes the agent copy the wrong pattern.
-5. Propose placement per finding: event-triggered → hook; permissions → agent config; on-demand procedure → skill (⚒️); always-true → steering.
-6. Present the table. User approves, edits, or discards each item. Then dispatch ⚒️ for the approved skills.
+5. Propose placement per finding: event-triggered → hook (🪖); permissions → agent config (🪖); on-demand procedure → skill (⚒️); always-true → steering (🪖).
+6. Present the table. User approves, edits, or discards each item. Then dispatch ⚒️ for the approved skills, 🪖 /skill-smith-fit for the approved armor.
 
 ## Heuristics
 
