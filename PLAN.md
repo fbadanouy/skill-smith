@@ -1,9 +1,14 @@
 # Skill-Smith Upgrade Plan
 
-> **Status (2026-07-14): Phases 1–5 applied** in one pass (iteration-2 eval run
-> was skipped by user decision). Also added: posture-skill classification in
-> /forge and eval case 4 (posture skill must stay tiny). The eval gate below is
-> still owed: run the 4-case eval to validate the batch.
+> **Status (2026-07-14): Phases 1–5 applied.** Also added: posture-skill
+> classification in /forge (a behavioral contract stays ~25 lines; it never
+> gets interviewed into a procedure) and a fourth eval case testing exactly
+> that. Next validation pass: re-run the 4-case eval against a no-skill
+> baseline.
+>
+> This document doubles as provenance: every rule in the pack traces to a
+> source below — read it before proposing additions, and add to the
+> deliberately-skipped table when you reject one.
 
 Based on a read of the three closest projects in the space (2026-07-10):
 
