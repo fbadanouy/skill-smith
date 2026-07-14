@@ -50,9 +50,10 @@ If your agent wins bare-handed, the SMITH refuses your gold.
 A blade wins duels. A harness wins wars.
 The SMITH measures the wearer before he forges.
 
-`harness/<platform>/` — mechanics, primitives, templates. Verified against
-real docs, every claim with receipts. The hammers read it before they touch
-platform steel. Fitted so far: **kiro**. Codex and Claude Code on the anvil.
+`harness/<platform>/` — mechanics, primitives, templates, a docs mirror
+with a pull script. Verified against real docs, every claim with receipts.
+The hammers read it before they touch platform steel.
+Fitted: **kiro** · **codex** · **claude-code**.
 
 ## THE OATH
 

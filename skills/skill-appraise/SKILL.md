@@ -18,6 +18,8 @@ Confirm scope (workspace, global, or both), read every SKILL.md, then check each
 - **dead weight** — the model handles the task just as well without it (a /skill-temper baseline run passed skill-less, or the body only restates what any model knows) → deletion candidate; the user decides
 - **wrong artifact type** — really always-on knowledge (steering), an event automation (hook), or permission scoping (agent config); skills can't do those jobs → 🪖 /skill-smith-fit, grounded in `harness/<platform>/primitives.md` if the pack is installed, else doc citations
 
+Also weigh the harness pack itself: compare `harness/<platform>/mechanics.md`'s "last verified" line against the installed platform version (e.g. `kiro-cli --version`). Version moved → mark the pack **stale**, recommend re-running its `pull-docs.sh` (or re-fetching docs) before trusting its claims.
+
 ## Report
 
 | Skill | Finding | Severity | Action |
