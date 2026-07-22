@@ -1,6 +1,6 @@
 ---
 name: skill-smelt
-description: Extract skills and rules from raw material. Use when the user provides docs, transcripts, runbooks, or review feedback and wants skills or reusable rules pulled out of it.
+description: Extract skills and rules from raw material. Use when the user provides docs, transcripts, runbooks, or review feedback and wants skills or reusable rules pulled out of it, or asks to smelt the inventory of loot pieces banked by /loot.
 ---
 
 # 🔥 /skill-smelt · extract from raw material
@@ -24,6 +24,7 @@ You can detect ambiguity, contradiction, and absence in the material — you can
 - Lint/CI configs are already rules — reference them, don't duplicate them.
 - A correction the user gave twice in reviews is a rule waiting to be written.
 - Work from a real diff/file the user is touching. Don't try to extract everything at once.
+- Inventory as material (`.claude/skill-smith/inventory/`, pieces banked by 💰 /loot): each piece is a pre-mined finding with evidence — skip step 1's mining, group related pieces, enter at step 2. After a piece's artifact ships (or the user discards it), set its `status: smelted` — never delete pieces yourself.
 - Most common waste: encoding things a model infers on its own. Drop those.
 - Keep a "deliberately skipped" list and show it in the report.
 

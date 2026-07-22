@@ -4,7 +4,7 @@
 
 [![standard: agentskills.io](https://img.shields.io/badge/standard-agentskills.io-8b5a2b)](https://agentskills.io)
 ![dependencies: none](https://img.shields.io/badge/dependencies-none-2ea44f)
-![size: ~400 lines](https://img.shields.io/badge/size-~400_lines-blue)
+![size: ~480 lines](https://img.shields.io/badge/size-~480_lines-blue)
 ![telemetry: zero](https://img.shields.io/badge/telemetry-zero-black)
 ![install: cp -R](https://img.shields.io/badge/install-cp%20--R-orange)
 
@@ -45,6 +45,23 @@ If your agent wins bare-handed, the SMITH refuses your gold.
   🧙  /skill-smith      just speak. the SMITH picks the hammer
 ```
 
+## THE LOOT
+
+Every quest drops something. Most wielders walk past it.
+
+```
+  💰  /loot             session ends. harvest the drops
+```
+
+Corrections you gave. Loops that cost you time. Facts no model
+could have guessed. `/loot` banks them in the **inventory** —
+one piece per file, evidence attached, waiting.
+
+Then the loop closes: `/skill-smelt inventory` and the SMITH
+hammers your drops into blades and armor. Next quest, stronger.
+
+`/loot` never crafts. Harvest is fast. The forge takes its time.
+
 ## THE HARNESS
 
 A blade wins duels. A harness wins wars.
@@ -75,7 +92,7 @@ Fitted: **kiro** · **codex** · **claude-code**.
   > /skill-smith
 ```
 
-No server. No account. No build. ~400 lines of hammers.
+No server. No account. No build. ~480 lines of hammers.
 Read every line. Then trust it. That is the point.
 
 ## THE TOMES
