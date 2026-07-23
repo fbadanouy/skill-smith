@@ -51,6 +51,16 @@ if [ -d "$HARNESS_SRC" ]; then
     find "$pack" -maxdepth 1 -type f -exec cp {} "$HDEST/$pname/" \;
     echo "  🛡️  harness fitted: $pname"
   done
+
+  # Docs mirror — big, so opt-in. Each pack ships its own pull-docs.sh.
+  read -rp "Pull the docs mirror now (fresh from the source)? [y/N] " pd
+  if [[ "$pd" =~ ^[Yy]$ ]]; then
+    for pull in "$HDEST"/*/pull-docs.sh; do
+      [ -f "$pull" ] || continue
+      echo "  📜 pulling docs: $(basename "$(dirname "$pull")")"
+      bash "$pull" || echo "  ⚠️  docs pull failed for $(dirname "$pull")"
+    done
+  fi
 fi
 
 echo
